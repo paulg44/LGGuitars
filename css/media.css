@@ -1,0 +1,92 @@
+/* Smartphones & Tablets */
+@media (max-width: 1200px) {
+  /* Welcome Page */
+  #welcome-page {
+    background-position: 15%;
+  }
+
+  #welcome-page .heading {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .heading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom: 2px solid var(--third-color);
+    color: var(--third-color);
+  }
+
+  /* Showcase */
+  #showcase .img-grid img {
+    border: none;
+  }
+
+  .img-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Process */
+  .process-header h1 {
+    padding: 0 1rem;
+  }
+
+  #process .process-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .process-flex p {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .process-flex img {
+    width: 70%;
+    padding: 10px 0;
+  }
+
+  /* Contact */
+  .inputs input {
+    width: fit-content;
+  }
+
+  /* Footer */
+  .footer-content {
+    font-size: 10px;
+    padding-top: 1rem;
+  }
+}
+
+/* Hover */
+@media (min-width: 1200px) {
+  /* Image Hover */
+  .img-grid img {
+    opacity: 0.4;
+    transition: all 1.5s;
+  }
+
+  .img-grid img:hover {
+    opacity: 1;
+  }
+
+  /* Process Heading Hovers */
+  .process-flex h3 {
+    transition: all 1.5s;
+  }
+
+  .process-flex h3:hover {
+    color: var(--secondary-color);
+  }
+
+  .process-flex i {
+    transition: all 1.5s;
+  }
+
+  .process-flex i:hover {
+    color: var(--primary-color);
+  }
+}
