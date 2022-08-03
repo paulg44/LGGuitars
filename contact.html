@@ -1,58 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to LG Custom Guitars">
-    <meta name="keywords" content="guitar,custom">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to LG Custom Guitars" />
+    <meta name="keywords" content="guitar,custom" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <title>LG Guitars | Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <a href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
-            <div class="links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="contact.html" class="current">Contact</a></li>
-                </ul>
-            </div>
-    </nav> 
-    
+      <a href="index.html"
+        ><img src="./img/logo.png" alt="logo" class="logo"
+      /></a>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Contact Header -->
     <div class="contact-header">
-        <h1 class="section-title"><span class="text-third">C</span>ontact</h1>
-        <p class="text-secondary">For more information or to discuss your needs, please fill out the form below and we will contact you as soon as possible. Many thanks for taking the time to visit our website.</p>
+      <h1 class="section-title"><span class="text-third">C</span>ontact</h1>
+      <p class="text-secondary">
+        For more information or to discuss your needs, please fill out the form
+        below and we will contact you as soon as possible. Many thanks for
+        taking the time to visit our website.
+      </p>
     </div>
-    
+
     <!-- Contact Form -->
     <section id="contact-form">
-        <div class="container">
-            <form action="">
-              <div class="inputs">
-                <input type="text" placeholder="Name" name="name">
-                <input type="text" placeholder="Subject" name="subject">
-                <input type="email" placeholder="Email" name="email">
-                <input type="text" placeholder="Phone" name="phone">
-                <textarea type="text" placeholder="Leave Message" name="message"></textarea>
-              </div>
-              <button type="submit" class="btn form-btn"><i class="fa-solid fa-guitar"></i> Submit</button> 
-            </form>
-        </div>
+      <div class="container">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
+          <div class="inputs">
+            <input type="text" placeholder="Name" name="name" />
+            <input type="text" placeholder="Subject" name="subject" />
+            <input type="email" placeholder="Email" name="email" />
+            <input type="text" placeholder="Phone" name="phone" />
+            <textarea
+              type="text"
+              placeholder="Leave Message"
+              name="message"
+            ></textarea>
+            <div>
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn form-btn">
+            <i class="fa-solid fa-guitar"></i> Submit
+          </button>
+        </form>
+      </div>
     </section>
-    
+
     <!-- Footer -->
     <footer id="footer">
-        <div class="footer-content">
-            <p>LG <span class="text-third">G</span>uitars Copyright &copy; 2022 All Rights Reserved</p>
-        </div>
+      <div class="footer-content">
+        <p>
+          LG <span class="text-third">G</span>uitars Copyright &copy; 2022 All
+          Rights Reserved
+        </p>
+        <p class="web">Website designed & created by PG Design</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
