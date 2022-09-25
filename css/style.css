@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.5;
 }
 
@@ -48,7 +48,7 @@ img {
 }
 
 .section-title {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   text-shadow: 5px 5px 15px #000;
 }
 
@@ -139,7 +139,7 @@ img {
 
 /* Welcome Page */
 #welcome-page {
-  background: url("/img/navbar2.jpg") no-repeat center center/cover;
+  background: url('/img/navbar2.jpg') no-repeat center center/cover;
   height: 100vh;
   top: auto;
 }
@@ -159,12 +159,36 @@ img {
   padding: 10px 20px;
   border-right: 2px solid var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
+  animation: fade-in 2s ease;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .heading p {
   font-size: 1rem;
   padding: 20px;
   border-bottom: 2px solid var(--secondary-color);
+  animation: fade-in-right 3s ease;
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .heading .btn {
