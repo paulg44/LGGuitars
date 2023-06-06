@@ -1,0 +1,32 @@
+/* CSS for Guitar Card Container */
+
+.showcase {
+  position: relative;
+  top: 0;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  border-top: 2px solid var(--secondary-color);
+}
+
+.showcase-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase-header h3 {
+  font-size: 2.5rem;
+}
+
+.showcase-header p {
+  width: 60%;
+  padding-bottom: 1rem;
+  font-size: large;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}

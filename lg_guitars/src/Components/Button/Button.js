@@ -1,3 +1,5 @@
 // Component for Buttons
 
-function Button() {}
+function Button() {
+  return <button></button>;
+}
