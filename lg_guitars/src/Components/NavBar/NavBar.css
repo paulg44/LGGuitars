@@ -1,0 +1,60 @@
+/* CSS for Navbar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background: var(--dark-color);
+  height: 5rem;
+  border-bottom: 3px solid var(--third-color);
+  z-index: 1;
+}
+
+.links a {
+  color: #fff;
+}
+
+.links a:hover {
+  cursor: pointer;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.links ul {
+  display: flex;
+}
+
+.links li {
+  margin: 30px 30px 0 0;
+  font-size: 1rem;
+  animation: bounce-in 2.5s ease;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.links .current {
+  color: var(--third-color);
+}
+
+.logo {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  padding-top: 1rem;
+  padding-left: 3rem;
+}

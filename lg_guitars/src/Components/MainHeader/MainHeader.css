@@ -1,0 +1,48 @@
+/* CSS for Main Header */
+
+.welcome-page {
+  /* background-image: url({mainImg}) no-repeat center center/cover; */
+  height: 100vh;
+  top: auto;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.heading h1 {
+  font-size: 4.2rem;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+  margin-top: 100px;
+  padding: 10px 20px;
+  border-right: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  animation: fade-in 2s ease;
+}
+
+.heading p {
+  font-size: 1rem;
+  padding: 20px;
+  border-bottom: 2px solid var(--secondary-color);
+  animation: fade-in-right 3s ease;
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.heading .btn {
+  margin-top: 1rem;
+}
