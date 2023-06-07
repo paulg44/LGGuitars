@@ -14,6 +14,7 @@ import bassTwo from "./img/bass2.jpg";
 import NavBar from "./Components/NavBar/NavBar.js";
 import MainHeader from "./Components/MainHeader/MainHeader";
 import GuitarCardContainer from "./Components/GuitarCardContainer/GuitarCardContainer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         bassOne={bassOne}
         bassTwo={bassTwo}
       />
+      <Footer />
     </div>
   );
 }
