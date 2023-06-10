@@ -1,22 +1,24 @@
 // Component for Navbar
 import "./NavBar.css";
+import { Link } from "react-router-dom";
+import logo from "../../img/logo.png";
 
-function NavBar({ logo }) {
+function NavBar() {
   return (
     <nav className="navbar">
-      <a href="index.html">
+      <Link to="/lg_guitars/src/pages/Homepage">
         <img src={logo} alt="logo" className="logo"></img>
-      </a>
+      </Link>
       <div className="links">
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <Link to="/lg_guitars/src/pages/Homepage">Home</Link>
           </li>
           <li>
-            <a href="process.html">Process</a>
+            <Link to="/lg_guitars/src/pages/Progress">Process</Link>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <Link to="contct.html">Contct</Link>
           </li>
         </ul>
       </div>
