@@ -1,0 +1,42 @@
+/* CSS for Process Content */
+
+.process {
+  padding: 1rem;
+}
+
+.process .process-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-bottom: dotted 2px var(--third-color);
+}
+
+.process .process-flex:nth-child(4) {
+  border-bottom: none;
+}
+
+.process .process-reverse {
+  flex-direction: row-reverse;
+}
+
+.process-flex h3 {
+  font-size: 3rem;
+  padding: 0 1.5rem;
+}
+
+.process-flex img {
+  width: 20%;
+  margin: 10px;
+  border-radius: 20%;
+  box-shadow: 0px 12px 20px #000;
+}
+
+.process-flex p {
+  width: 30%;
+}
+
+.process-flex i {
+  color: var(--third-color);
+}
