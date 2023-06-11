@@ -1,0 +1,45 @@
+/* CSS for Contact Form */
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-form .form-btn {
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form .inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.inputs input {
+  margin: 10px;
+  width: 300px;
+  padding: 0.4rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.inputs input:focus {
+  border: 5px solid var(--third-color);
+  outline: none;
+}
+
+.inputs textarea {
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px 0px 0px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.inputs textarea:focus {
+  border: 5px solid var(--third-color);
+}
