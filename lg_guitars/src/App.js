@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter className="App">
       <Routes>
+        <h1>Test</h1>
         <Route path="/lg_guitars/src/pages/Homepage" element={<Home />} />
         <Route path="/lg_guitars/src/pages/Progress" element={<Process />} />
         <Route path="/lg_guitars/src/pages/Contact" element={<Contact />} />
