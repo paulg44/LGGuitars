@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Import Pages
 import Home from "./pages/Homepage/Homepage";
 import Process from "./pages/Progress/Progress";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/lg_guitars/src/pages/Homepage" element={<Home />} />
         <Route path="/lg_guitars/src/pages/Progress" element={<Process />} />
+        <Route path="/lg_guitars/src/pages/Contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
     // <div className="App">

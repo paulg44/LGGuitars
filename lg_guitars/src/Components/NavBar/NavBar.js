@@ -18,7 +18,7 @@ function NavBar() {
             <Link to="/lg_guitars/src/pages/Progress">Process</Link>
           </li>
           <li>
-            <Link to="contct.html">Contct</Link>
+            <Link to="/lg_guitars/src/pages/Contact">Contact</Link>
           </li>
         </ul>
       </div>
