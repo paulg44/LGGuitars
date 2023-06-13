@@ -11,6 +11,7 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <BrowserRouter className="App">
+      <h1>Test</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lg_guitars/src/pages/Progress" element={<Process />} />
