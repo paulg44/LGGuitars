@@ -36,5 +36,7 @@
 }
 
 .process-flex i {
+  font-size: 32px;
+  margin: 10px;
   color: var(--third-color);
 }

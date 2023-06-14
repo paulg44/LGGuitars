@@ -5,10 +5,10 @@ import "./ProcessContent.css";
 function ProcessContent(props) {
   return (
     <div>
-      <div className="process-flex">
+      <div className={props.className}>
         <h3 className="section-title">
           {props.h3}
-          <i className="fa-solid fa-compass-drafting"></i>
+          <i classNamee={props.iconClass}>{props.icon}</i>
         </h3>
         <p>{props.content}</p>
         <img src={props.img} alt={props.alt} />
