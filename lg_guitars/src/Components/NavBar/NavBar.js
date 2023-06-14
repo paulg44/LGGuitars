@@ -6,19 +6,19 @@ import logo from "../../img/logo.png";
 function NavBar() {
   return (
     <nav className="navbar">
-      <Link to="/lg_guitars/src/pages/Homepage">
+      <Link to="/">
         <img src={logo} alt="logo" className="logo"></img>
       </Link>
       <div className="links">
         <ul>
           <li>
-            <Link to="/lg_guitars/src/pages/Homepage">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/lg_guitars/src/pages/Progress">Process</Link>
+            <Link to="/process-page">Process</Link>
           </li>
           <li>
-            <Link to="/lg_guitars/src/pages/Contact">Contact</Link>
+            <Link to="/contact-page">Contact</Link>
           </li>
         </ul>
       </div>

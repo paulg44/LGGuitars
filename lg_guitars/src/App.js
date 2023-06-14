@@ -14,8 +14,8 @@ function App() {
       <h1>Test</h1>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/lg_guitars/src/pages/Progress" element={<Process />} />
-        <Route path="/lg_guitars/src/pages/Contact" element={<Contact />} />
+        <Route path="/process-page" element={<Process />} />
+        <Route path="/contact-page" element={<Contact />} />
       </Routes>
     </BrowserRouter>
     // <div className="App">
