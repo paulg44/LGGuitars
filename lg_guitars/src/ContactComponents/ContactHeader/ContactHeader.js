@@ -5,7 +5,7 @@ import "./ContactHeader.css";
 function ContactHeader() {
   return (
     <div className="contact-header">
-      <h2 className="section-title">
+      <h2 className="section-title" data-testid="contact-header">
         <span className="text-third">C</span>ontact
       </h2>
       <p className="text-secondary">

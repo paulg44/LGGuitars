@@ -1,6 +1,7 @@
 // Component for Contact Form
 
 import "./ContactForm.css";
+import { FaGuitar } from "react-icons/fa";
 
 function ContactForm() {
   return (
@@ -27,7 +28,10 @@ function ContactForm() {
             </div>
           </div>
           <button type="submit" className="btn form-btn">
-            <i class="fa-solid fa-guitar"></i> Submit
+            <i>
+              <FaGuitar />
+            </i>{" "}
+            Submit
           </button>
         </form>
       </div>

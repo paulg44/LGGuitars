@@ -17,19 +17,6 @@ function App() {
         <Route path="/contact-page" element={<Contact />} />
       </Routes>
     </BrowserRouter>
-    // <div className="App">
-    //   <NavBar logo={logo} />
-    //   <MainHeader mainImg={mainImg} />
-    //   <GuitarCardContainer
-    //     guitarOne={guitarOne}
-    //     guitarTwo={guitarTwo}
-    //     guitarThree={guitarThree}
-    //     guitarFour={guitarFour}
-    //     bassOne={bassOne}
-    //     bassTwo={bassTwo}
-    //   />
-    //   <Footer />
-    // </div>
   );
 }
 

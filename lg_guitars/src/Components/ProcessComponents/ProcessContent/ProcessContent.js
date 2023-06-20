@@ -8,7 +8,7 @@ function ProcessContent(props) {
       <div className={props.className}>
         <h3 className="section-title">
           {props.h3}
-          <i classNamee={props.iconClass}>{props.icon}</i>
+          <i className={props.iconClass}>{props.icon}</i>
         </h3>
         <p>{props.content}</p>
         <img src={props.img} alt={props.alt} />

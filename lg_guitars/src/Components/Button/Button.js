@@ -1,5 +1,5 @@
 // Component for Buttons
 
 function Button() {
-  return <button></button>;
+  return <button icon={icon}></button>;
 }

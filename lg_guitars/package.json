@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@playwright/test": "^1.35.1",
     "react-test-renderer": "^18.2.0"
   }
 }

@@ -1,5 +1,6 @@
 // Component for Main Header
 import "./MainHeader.css";
+import { FaGuitar } from "react-icons/fa";
 
 function MainHeader({ mainImg }) {
   return (
@@ -17,7 +18,10 @@ function MainHeader({ mainImg }) {
           </p>
           <div className="btn">
             <a href="#showcase">
-              <i class="fa-solid fa-guitar"></i> Read More
+              <i>
+                <FaGuitar />
+              </i>{" "}
+              Read More
             </a>
           </div>
         </div>
