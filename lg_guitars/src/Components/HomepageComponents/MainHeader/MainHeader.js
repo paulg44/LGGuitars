@@ -14,7 +14,7 @@ function MainHeader({ mainImg }) {
             LG <span className="text-third">G</span>uitars
           </h1>
           <p className="text-secondary">
-            Custom made with quality craftmanship
+            Custom made with quality craftmanship.
           </p>
           <div className="btn">
             <a href="#showcase">
