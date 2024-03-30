@@ -73,8 +73,8 @@ test("contact links", () => {
   expect(contactPage).toBeInTheDocument();
 });
 
-// Test Home links navbar to contact page
-test("contact links", () => {
+// Test Home links navbar to home page
+test("home links", () => {
   render(
     <MemoryRouter>
       <NavBar></NavBar>
