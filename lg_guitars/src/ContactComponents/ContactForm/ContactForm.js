@@ -7,12 +7,7 @@ function ContactForm() {
   return (
     <section className="contact-form">
       <div className="container">
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
+        <form name="contact" method="POST" data-netlify="true">
           <div className="inputs">
             <input type="text" placeholder="Name" name="name" />
             <input type="text" placeholder="Subject" name="subject" />
@@ -23,9 +18,7 @@ function ContactForm() {
               placeholder="Leave Message"
               name="message"
             ></textarea>
-            <div>
-              <div data-netlify-recaptcha="true"></div>
-            </div>
+            <div></div>
           </div>
           <button type="submit" className="btn form-btn">
             <i>
