@@ -7,7 +7,7 @@ function ContactForm() {
   return (
     <section className="contact-form">
       <div className="container">
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <div className="inputs">
             <input type="text" placeholder="Name" name="name" />
