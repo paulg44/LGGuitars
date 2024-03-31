@@ -37,7 +37,7 @@ test("input values can be changed", async () => {
   });
 });
 
-// Mock the full form
+// Mock the full form ##WOULD LIKE TO ADD A CUSTOM MESSAGE TO CHECK THIS PROPERLY
 test("full form mock submit", async () => {
   render(<ContactForm />);
 
@@ -47,7 +47,6 @@ test("full form mock submit", async () => {
   const emailInput = screen.getByPlaceholderText("Email");
   const phoneInput = screen.getByPlaceholderText("Phone");
   const textInput = screen.getByPlaceholderText("Leave Message");
-  const submitBtn = screen.getByRole("button", { name: "Submit" });
 
   // Act
   fireEvent.change(nameInput, { target: { value: "Paul Garton" } });
@@ -56,5 +55,14 @@ test("full form mock submit", async () => {
   fireEvent.change(phoneInput, { target: { value: "01332404040" } });
   fireEvent.change(textInput, { target: { value: "Test mock form" } });
 
-  nock("https://bespoke-centaur-2bc4f2.netlify.app/contact-page");
+  nock("http://localhost:3000")
+    .post("/contact-page")
+    .reply(200, { success: true });
+
+  const submitBtn = screen.getByRole("button", { name: "Submit" });
+  fireEvent.click(submitBtn);
+
+  await waitFor(() => {
+    expect(window.location.href).not.toBe("http://localhost:3000/contact-page");
+  });
 });
