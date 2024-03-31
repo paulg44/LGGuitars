@@ -19,12 +19,9 @@ function ContactForm() {
               placeholder="Leave Message"
               name="message"
             ></textarea>
-            <div></div>
           </div>
           <button type="submit" className="btn form-btn">
-            <i>
-              <FaGuitar />
-            </i>{" "}
+            <FaGuitar />
             Submit
           </button>
         </form>
