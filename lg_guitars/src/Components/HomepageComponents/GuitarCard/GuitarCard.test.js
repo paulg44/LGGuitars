@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import GuitarCard from "./GuitarCard";
 
@@ -11,4 +11,10 @@ test("page render", function () {
   );
   // Test
   expect(container).toBeInTheDocument();
+});
+
+test("images render", () => {
+  render(<GuitarCard />);
+
+  expect(screen.getByTestId("cardImage")).toBeInTheDocument();
 });

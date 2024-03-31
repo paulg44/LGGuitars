@@ -4,7 +4,7 @@ import "./ProcessContent.css";
 
 function ProcessContent(props) {
   return (
-    <div>
+    <div data-testid="processTestID">
       <div className={props.className}>
         <h3 className="section-title">
           {props.h3}

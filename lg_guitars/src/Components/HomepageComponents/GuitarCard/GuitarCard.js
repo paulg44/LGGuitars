@@ -5,6 +5,7 @@ function GuitarCard(props) {
   return (
     <div className="showcase-img">
       <img
+        data-testid="cardImage"
         src={props.img}
         alt={props.alt}
         className="border-right border-left"
