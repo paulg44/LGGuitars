@@ -24,7 +24,7 @@ function GuitarCardContainer({
             the guitars we have built over the years.
           </p>
         </div>
-        <div className="img-grid">
+        <div className="img-grid" data-testid="imageGrid">
           <GuitarCard
             img={guitarOne}
             alt="guitar1"

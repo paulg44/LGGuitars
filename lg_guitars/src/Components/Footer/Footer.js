@@ -3,7 +3,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" testid="footer">
       <div className="footer-content">
         <p>
           LG <span className="text-third">G</span>uitars Copyright &copy; 2022
