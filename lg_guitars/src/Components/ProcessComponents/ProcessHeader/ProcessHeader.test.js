@@ -6,7 +6,7 @@ import ProcessHeader from "./ProcessHeader";
 test("header renders", () => {
   render(<ProcessHeader />);
 
-  expect(
-    screen.getByRole("heading", { name: "Welcome To The P rocess" })
-  ).toBeInTheDocument();
+  expect(screen.getByRole("heading")).toHaveTextContent(
+    "Welcome To The Process"
+  );
 });

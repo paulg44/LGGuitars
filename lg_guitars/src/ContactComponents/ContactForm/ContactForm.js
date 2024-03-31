@@ -10,7 +10,12 @@ function ContactForm() {
         <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <div className="inputs">
-            <input type="text" placeholder="Name" name="name" />
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              data-testid="formName"
+            />
             <input type="text" placeholder="Subject" name="subject" />
             <input type="email" placeholder="Email" name="email" />
             <input type="text" placeholder="Phone" name="phone" />
